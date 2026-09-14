@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "permissions-policy",
+          "operation": "append",
+          "value": "picture-in-picture=*"
+        },
+        {
+          "header": "feature-policy",
+          "operation": "remove"
+        }
+      ]
+    },
+    "condition": {
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  }
+]

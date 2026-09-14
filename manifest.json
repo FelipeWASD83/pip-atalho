@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "PiP no atalho",
+  "version": "2.0",
+  "description": "Joga o video da aba em Picture-in-Picture com um atalho, mesmo em site que bloqueia.",
+  "permissions": ["scripting", "declarativeNetRequest"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Picture-in-Picture (Alt+P)" },
+  "declarative_net_request": {
+    "rule_resources": [
+      { "id": "cabecalhos", "enabled": true, "path": "regras-de-rede.json" }
+    ]
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+P" }
+    },
+    "janela": {
+      "suggested_key": { "default": "Alt+J" },
+      "description": "Abrir o player inteiro numa janela flutuante (com legenda)"
+    }
+  }
+}
