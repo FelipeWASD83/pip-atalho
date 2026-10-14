@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "PiP no atalho",
-  "version": "2.0",
+  "version": "2.0.0",
   "description": "Joga o video da aba em Picture-in-Picture com um atalho, mesmo em site que bloqueia.",
   "permissions": ["scripting", "declarativeNetRequest"],
   "host_permissions": ["<all_urls>"],
