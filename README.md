@@ -68,3 +68,7 @@ node testes\testar-barreiras.js
 Ela abre um Brave descartável, com perfil separado, monta uma página para cada
 armadilha conhecida, aperta o atalho e confere o resultado. Tem que terminar com
 "Tudo passou".
+
+## Licença
+
+Código sob a licença MIT (arquivo `LICENSE`).
